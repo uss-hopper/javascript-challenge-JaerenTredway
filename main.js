@@ -1,9 +1,13 @@
 /*
 * JavaScript Challenge
  */
- function display() {
+function display() {
     alert("click me activated");
- }
+}
+ 
+function exofont() {
+        alert("exo called");    
+}
     
  let target           = document.getElementById('target');
  let textColor        = document.getElementById('text-color');
@@ -15,11 +19,7 @@
  // const #             = document.getElementById('#');
  // const #             = document.getElementById('#');
         
-function f1()
-    {
-       alert("exo called");    
-    }
+ 
+ michroma.addEventListener("click", function(){target.style.color="blue";});
 
-window.onload = () => {
-    michroma.onclick = alert("window onload/ michroma onclick");
-};
+    //michroma.onclick = alert("window onload/ michroma onclick");
