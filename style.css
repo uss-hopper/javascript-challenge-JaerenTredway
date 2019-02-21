@@ -36,6 +36,7 @@ form {
 .input-field input{
     transition: all .3s ease-in;
     height: 2rem;
+    font-size: 1rem;
 }
 
 .input-field input:hover {

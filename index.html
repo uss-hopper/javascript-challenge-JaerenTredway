@@ -10,7 +10,8 @@
         <link href="./style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Exo:100,200,400|Michroma|Montserrat:100,200,300,400|Raleway:100,200,300,400|Titillium+Web:200,300,400" rel="stylesheet">
         
-        <script type="text/javascript" src="./main.js"></script>
+        <script src="./main.js"></script>
+      
     </head>
     
     <body>
@@ -21,9 +22,13 @@
     <section class="command-panel">
         <h2>COMMAND PANEL</h2>
         
+        <form>
+             <input type="button" onclick="display()" value="Click me" />
+        </form>
+        
         <div class="button-box">
-            <button type="submit">action</button>
-            <button type="submit">action</button>
+            <button type="submit" id="exo">Exo font</button>
+            <button type="submit" id="michroma">Michroma font</button>
             <button type="submit">action</button>
             <button type="submit">action</button>
             <button type="submit">action</button>
@@ -34,7 +39,7 @@
         <form action="/my-handling-form-page" method="post">
           <div class="input-field">
             <label id="text-color" for="">Input RGB</label>
-            <input type="text" id="#" name="form1">
+            <input type="text" name="form1">
           </div>
           <div class="input-field">
             <label for="">Input...</label>
@@ -52,13 +57,24 @@
             <label for="">Input...</label>
             <input type="text" id="#" name="form5">
           </div>
-          <div class="input-field">
-            <label for="">Input...</label>
-            <input type="text" id="#" name="form6">
-          </div>
         </form>
             
     </section>
         
     </body>
+    
+    <!-- TASKS:
+    Change text color
+    Change text font
+    Highlight entire paragraph
+    Find & replace
+    Highlight word
+    Map the scroll event to delete one word at a time
+    Shuffle words in random order
+    React to keyboard events
+    Find & replace using regular expressions
+    ROT13 “encryption”
+    Create anagrams of all words
+    Use the HTML5 drag & drop events
+    Load a <p> tag from the JSONPlaceholder using the XMLHttpRequest object and/or Fetch API -->
 </html>
