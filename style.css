@@ -1,3 +1,43 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+.command-panel {
+    border: 3px solid grey;
+    padding: 1rem;
+    background-color: lightgrey;
+}
+
+button {
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    transition: all .4s ease-in;
+}
+
+button:hover {
+    border: 1px solid grey; 
+    cursor: pointer;
+}
+
+form {
+    border: 3px solid grey; 
+    padding: 1rem;   
+}
+
+.input-field {
+    margin: 1rem;
+    display: inline;
+    cursor: pointer;
+}
+
+.input-field input{
+    transition: all .3s ease-in;
+    height: 2rem;
+}
+
+.input-field input:hover {
+    border: 2px solid grey;
+}
