@@ -26,7 +26,12 @@ function purplefont() {
    document.getElementById("target").style.color = "Purple";
 }
 
-function mouseOut() {
-   document.getElementById("mouse").style.backgroundColor = "blue";
+function highlight() {
+   document.getElementById("target").style.backgroundColor = "yellow";
 }
+
+function unhighlight() {
+   document.getElementById("target").style.backgroundColor = "white";
+}
+
 
