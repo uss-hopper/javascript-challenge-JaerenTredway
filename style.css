@@ -29,7 +29,7 @@ form {
 
 .input-field {
     margin: 1rem;
-    display: inline;
+    display: block;
     cursor: pointer;
 }
 

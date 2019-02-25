@@ -32,12 +32,20 @@ function findAndReplaceCat() {
    document.getElementById("target").innerHTML = newParagraph;
    }
 
-//FIXME: this function is messed up:
-function highlightWord() {
-   let wordToHighlight = document.getElementById("userInput").value;
-   let newParagraph = document.getElementById("target").innerHTML.replace(/wordToHighlight/g, 'Jerk');
+// function highlightWord() {
+//    let wordToHighlight = document.getElementById("userInput").value;
+//    let newParagraph = document.getElementById("target").innerHTML.replace(/wordToHighlight/g, 'Jerk');
+//    document.getElementById("target").innerHTML = newParagraph;
+//    alert(wordToHighlight);
+// }
+
+function deleteWord() {
+   let newParagraph = document.getElementById("target").innerHTML.split(' ').slice(0, -1).join(' ');
    document.getElementById("target").innerHTML = newParagraph;
-   alert(wordToHighlight);
+}
+
+function anagram(word1, word2){
+   return word1.split("").sort().join("") === word2.split("").sort().join("");
 }
 
 function reset() {
