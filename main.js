@@ -3,19 +3,11 @@
  */
 
 let target = document.getElementById('target');
-// let textColor        = document.getElementById('text-color');
-// let exo              = document.getElementById('exo');
-// let michroma         = document.getElementById('michroma');
-// const #              = document.getElementById('#');
-// const #              = document.getElementById('#');
-// const #              = document.getElementById('#');
-// const #              = document.getElementById('#');
-// const #              = document.getElementById('#');
 
 //exo.addEventListener('click', hide, false);
 
 function cursivefont() {
-   document.getElementById("target").style.fontFamily = "cursive";
+   document.getElementById('target').style.fontFamily = "cursive";
 }
 
 function michromafont() {
@@ -39,6 +31,18 @@ function findAndReplaceCat() {
    console.log(newParagraph);
    document.getElementById("target").innerHTML = newParagraph;
    }
+
+//FIXME: this function is messed up:
+function highlightWord() {
+   let wordToHighlight = document.getElementById("userInput").value;
+   let newParagraph = document.getElementById("target").innerHTML.replace(/wordToHighlight/g, 'Jerk');
+   document.getElementById("target").innerHTML = newParagraph;
+   alert(wordToHighlight);
+}
+
+function reset() {
+   document.querySelector('#target').removeAttribute('style');
+}
 
 window.addEventListener('load', function() {
    console.log('All assets are loaded')

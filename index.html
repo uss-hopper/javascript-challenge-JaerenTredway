@@ -29,14 +29,17 @@
             <button type="submit" onmouseover="highlight()" onmouseleave="unhighlight()">hover here to highlight</button>
             <button type="submit" onclick="findAndReplaceCat()">find and replace cat</button>
             <button type="submit" onclick="">action</button>
-            <button type="submit" onclick="">action</button>
+            <button type="submit" onclick="reset()">reset styles</button>
         </div>
         
-        <form action="/my-handling-form-page" method="post">
+        <form method="post">
+
           <div class="input-field">
-            <label id="text-color">Input RGB</label>
-            <input type="text" name="form1">
+            <label>Input word to highlight:</label>
+            <input type="text" id="userInput">
+            <button onclick="highlightWord()">Submit</button>
           </div>
+
           <div class="input-field">
             <label>Input...</label>
             <input type="text" id="form2" name="form2">
